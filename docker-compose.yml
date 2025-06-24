@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: script/Dockerfile
+    container_name: telegram_bot
+    restart: unless-stopped
+    volumes:
+      - ./data:/app  # Том для хранения БД SQLite
+    environment:
+      - PYTHONUNBUFFERED=1
