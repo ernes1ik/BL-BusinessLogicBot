@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.env
+data/
+.DS_Store
+venv/
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# Файлы виртуального окружения
+pyvenv.cfg
+.Python
+bin/
+lib/
+include/
